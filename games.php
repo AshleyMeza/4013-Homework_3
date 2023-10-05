@@ -5,7 +5,7 @@ require_once ("model-games.php");
 $pageTitle = "Game scores";
 include "view-header.php";
 
-$players = selectGames();
+$games = selectGames();
 include "view-games.php";
 
 include "view-footer.php";
