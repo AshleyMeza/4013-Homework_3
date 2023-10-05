@@ -1,5 +1,5 @@
  <?php
-require_once ("util-db.php")
+require_once ("util-db.php");
 require_once ("model-players.php");
 
 $pageTitle = "Soccer Players";
