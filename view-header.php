@@ -23,10 +23,10 @@
           <a class="nav-link" href="players.php">Players</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="stadiums.php">Stadiums</a>
+          <a class="nav-link" href="games.php">Games Scores</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="players-stadiums.php">Players with Stadium</a>
+          <a class="nav-link" href="players-games.php">Players and Game Score</a>
         </li>
       </ul>
     </div>
