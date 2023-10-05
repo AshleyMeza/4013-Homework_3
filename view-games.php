@@ -5,6 +5,7 @@
       <tr>
        <th>Game ID</th>
       <th>Winner</th>
+      <th>Loser</th>
       <th>Score</th>
       <th>Date</th> 
       </tr>
@@ -15,6 +16,7 @@
     <tr>
       <td><?php echo $game['game_id'];?></td>
       <td><?php echo $game['winner'];?></td>
+      <td><?php echo $game['loser'];?></td>
       <td><?php echo $game['score'];?></td>
       <td><?php echo $game['date'];?></td>
     </tr>
