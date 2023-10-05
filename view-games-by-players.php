@@ -21,8 +21,8 @@
       <td><?php echo $game['loser'];?></td>
       <td><?php echo $game['score'];?></td>
       <td><?php echo $game['date'];?></td>
-      td><?php echo $game['stadium_name'];?></td>
-      td><?php echo $game['location'];?></td>
+      <td><?php echo $game['stadium_name'];?></td>
+      <td><?php echo $game['location'];?></td>
     </tr>
     <?php
   }
