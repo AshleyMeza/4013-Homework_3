@@ -5,7 +5,7 @@ require_once ("model-stadium.php");
 $pageTitle = "Stadium";
 include "view-header.php";
 
-$clubs = selectStadium();
+$stadium = selectStadium();
 include "view-stadium.php";
 
 include "view-footer.php";
