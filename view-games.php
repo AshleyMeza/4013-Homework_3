@@ -22,7 +22,7 @@
       <td><?php echo $game['date'];?></td>
       <td>
      
-    <form method = "post" action="clubs-by-games.php>
+    <form method = "post" action="clubs-by-games.php">
       <input type="hidden" name= "gid" value ="<?php echo $game['game_id'];?>"
       <button type="submit" class="btn btn-primary">Clubs</button>
     </form>
