@@ -13,7 +13,7 @@
       </tr>
       <tbody>
   <?php
-  while ($club = $clubs -> fetch_assoc()) {
+  while ($game = $games -> fetch_assoc()) {
     ?>
     <tr>
       <td><?php echo $game['game_id'];?></td>
