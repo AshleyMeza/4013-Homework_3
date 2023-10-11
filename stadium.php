@@ -2,7 +2,7 @@
 require_once ("util-db.php");
 require_once ("model-stadium.php");
 
-$pageTitle = "Stadium;
+$pageTitle = "Stadium";
 include "view-header.php";
 
 $clubs = selectStadium();
