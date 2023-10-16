@@ -5,7 +5,7 @@ require_once ("model-games-by-players.php");
 $pageTitle = "Game Reviews for Player";
 include "view-header.php";
 
-$games = selectGamesbyPlayers($_GET['id']);
+$games = selectGamesbyPlayers($_GET['pid']);
 include "view-games-by-players.php";
 
 include "view-footer.php";
