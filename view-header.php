@@ -32,7 +32,7 @@
           <a class="nav-link" href="stadium.php">Stadiums</a>
            </li>
            <li class="nav-item">
-          <a class="nav-link" href="players-games.php">Players and Game Score</a>
+          <a class="nav-link" href="players-with-games.php">Players and Game Score</a>
         </li>
       </ul>
     </div>
