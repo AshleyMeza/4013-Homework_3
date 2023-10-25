@@ -18,11 +18,11 @@
         <form method = "post" action="">
             <div class="mb-3">
               <label for="pName<?php echo $player['player_id']; ?>" class="form-label">Name</label>
-              <input type="text" class="form-control" id="pName<?php echo $player['player_id']; ?>" name = "pName" value = "<?php echo $game['player_name']; ?> ">
+              <input type="text" class="form-control" id="pName<?php echo $player['player_id']; ?>" name = "pName" value = "<?php echo $player['player_name']; ?> ">
             </div>
             <div class="mb-3">
               <label for="pNumber<?php echo $player['player_id']; ?>" class="form-label">Number</label>
-              <input type="text" class="form-control" id="pNumber<?php echo $player['player_id']; ?>" name = "pNumber" value = "<?php echo $game['number']; ?> ">
+              <input type="text" class="form-control" id="pNumber<?php echo $player['player_id']; ?>" name = "pNumber" value = "<?php echo $player['number']; ?> ">
             </div>
             <div class="mb-3">
               <label for="pCleats<?php echo $player['player_id']; ?>" class="form-label">Cleats</label>
