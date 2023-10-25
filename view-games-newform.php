@@ -32,6 +32,7 @@
                 <label for="cDate" class="form-label">Date</label>
                 <input type="text" class="form-control" id="cDate" name = "cDate">
               </div>
+                <input type = "hidden" name = "actionType" value = "Add"> 
             <button type="submit" class="btn btn-primary">Save</button>
           </form>
       </div>
