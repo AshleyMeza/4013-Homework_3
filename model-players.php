@@ -29,7 +29,7 @@ function insertPlayers($pName,$pNumber,$pCleats) {
 function updatePlayers($pName,$pNumber,$pCleats,$pid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `player` set `player_name`=?, `number`= ?, `cleats`= ?`where player_id=?");
+        $stmt = $conn->prepare("update `player` set `player_name`=?, `number`= ?, `cleats`= ? where player_id=?");
         $stmt->bind_param("sssi", $pName,$pNumber,$pCleats,$pid);
         $success = $stmt->execute();
         $result = $stmt->get_result();
