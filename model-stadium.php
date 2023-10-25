@@ -12,11 +12,11 @@ function selectStadium() {
         throw $e;
     }
 }
-function insertStadium($sName,$sCapacity,$sCapacity) {
+function insertStadium($sName,$sLocation,$sCapacity) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `stadium` (`stadium_name`, `location`,'capacity') VALUES (?, ?, ?)");
-        $stmt->bind_param("sss",$sName,$sCapacity,$sCapacity);
+        $stmt->bind_param("sss",$sName,$sLocation,$sCapacity);
         $success = $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
@@ -26,11 +26,11 @@ function insertStadium($sName,$sCapacity,$sCapacity) {
         throw $e;
     }
 }
-function updateStadium($sName,$sCapacity,$sCapacity,$sid) {
+function updateStadium($sName,$sLocation,$sCapacity,$sid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `stadium` set `stadium_name`=?, `location`= ?, `capacity`= ?,where stadium_id=?");
-        $stmt->bind_param("sssi",$sName,$sCapacity,$sCapacity,$sid);
+        $stmt->bind_param("sssi",$sName,$sLocation,$sCapacity,$sid);
         $success = $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
