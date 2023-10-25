@@ -29,7 +29,7 @@ function insertClubs($cName,$cLocation,$cColor) {
 function updateClubs($cName,$cLocation,$cColor,$cid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `clubs` set `club_name`= ?, `location`= ?,`color(s)`= ? where club_id=?");
+        $stmt = $conn->prepare("update `club` set `club_name`= ?, `location`= ?,`color(s)`= ? where club_id=?");
         $stmt->bind_param("sssi",$cName,$cLocation,$cColor,$cid);
         $success = $stmt->execute();
         $result = $stmt->get_result();
