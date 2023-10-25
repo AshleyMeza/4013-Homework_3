@@ -18,7 +18,11 @@
         <form method = "post" action="">
             <div class="mb-3">
               <label for="gWinner<?php echo $game['game_id']; ?>" class="form-label">Winner</label>
-              <input type="text" class="form-control" id="gWinner<?php echo $game['game_id']; ?>" name = "gWinner" value = "<?php echo $game['winner']; ?> ">
+     <?php
+        $winnerList = selectGamesForInput();
+        $selectedWinner = $game['game_id'];
+        include "view-game-input-list.php";
+    ?>
             </div>
             <div class="mb-3">
               <label for="gLoser<?php echo $game['game_id']; ?>" class="form-label">Loser</label>
