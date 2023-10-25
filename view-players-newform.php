@@ -18,8 +18,11 @@
         <form method = "post" action="">
             <div class="mb-3">
               <label for="pName" class="form-label">Name</label>
-              <input type="text" class="form-control" id="pName" name = "pName">
-            </div>
+           <?php
+              $pNameList = selectPlayersForInput();
+              include "view-player-input-list.php";
+          ?>            
+      </div>
             <div class="mb-3">
               <label for="pNumber" class="form-label">Number</label>
               <input type="text" class="form-control" id="pNumber" name = "pNumber">
