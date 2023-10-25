@@ -16,7 +16,7 @@ function insertClubs($cName,$cLocation,$cColor) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `club` (`club_name`, `location`, `color(s)`) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $cName,$cLocation,$cColor;
+        $stmt->bind_param("sss", $cName,$cLocation,$cColor);
         $success = $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
