@@ -20,6 +20,7 @@
               <label for="gWinner" class="form-label">Winner</label>
     <?php
     $winnerList = selectGamesForInput();
+    $selectedWinner = 0;
     include "view-game-input-list.php";
     ?>
             </div>
