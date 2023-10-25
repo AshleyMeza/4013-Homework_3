@@ -19,9 +19,10 @@
             <div class="mb-3">
               <label for="cName" class="form-label">Name</label>
   <?php
-    $winnerList = selectClubsForInput();
+    $cNameList = selectClubsForInput();
     include "view-club-input-list.php";
-    ?>            </div>
+    ?>            
+        </div>
             <div class="mb-3">
               <label for="cLocation" class="form-label">Location</label>
               <input type="text" class="form-control" id="cLocation" name = "cLocation">
