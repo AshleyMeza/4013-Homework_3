@@ -26,7 +26,7 @@ function insertPlayers($pName,$pNumber,$pCleats) {
         throw $e;
     }
 }
-function updatePlayers($pName,$pNumber,$pCleats,$pid)) {
+function updatePlayers($pName,$pNumber,$pCleats,$pid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `player` set `player_name`=?, `number`= ?, `cleats`= ?`where player_id=?");
