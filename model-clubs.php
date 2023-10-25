@@ -12,6 +12,19 @@ function selectClubs() {
         throw $e;
     }
 }
+function selectClubsForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT club_id,name FROM `club` order by name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 function insertClubs($cName,$cLocation,$cColor) {
     try {
         $conn = get_db_connection();
