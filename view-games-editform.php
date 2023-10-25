@@ -32,7 +32,7 @@
                 <label for="cDate<?php echo $game['game_id']; ?>" class="form-label">Date</label>
                 <input type="text" class="form-control" id="cDate<?php echo $game['game_id']; ?>" name = "cDate" value = "<?php echo $game['date']; ?> ">
               </div>
-                <input type="hidden" name = "gid" value = "<?php echo $game['game}id']; ?> ">
+                <input type="hidden" name = "gid" value = "<?php echo $game['game_id']; ?> ">
                 <input type = "hidden" name = "actionType" value = "Edit"> 
             <button type="submit" class="btn btn-primary">Save</button>
           </form>
