@@ -12,6 +12,19 @@ function selectPlayers() {
         throw $e;
     }
 }
+function selectPlayersForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT player_id,name FROM `player` order by name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 function insertPlayers($pName,$pNumber,$pCleats) {
     try {
         $conn = get_db_connection();
