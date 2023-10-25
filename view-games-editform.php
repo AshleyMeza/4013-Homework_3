@@ -17,20 +17,20 @@
       <div class="modal-body">
         <form method = "post" action="">
             <div class="mb-3">
-              <label for="cWinner<?php echo $game['game_id']; ?>" class="form-label">Winner</label>
-              <input type="text" class="form-control" id="cWinner<?php echo $game['game_id']; ?>" name = "cWinner" value = "<?php echo $game['winner']; ?> ">
+              <label for="gWinner<?php echo $game['game_id']; ?>" class="form-label">Winner</label>
+              <input type="text" class="form-control" id="gWinner<?php echo $game['game_id']; ?>" name = "gWinner" value = "<?php echo $game['winner']; ?> ">
             </div>
             <div class="mb-3">
-              <label for="cLoser<?php echo $game['game_id']; ?>" class="form-label">Loser</label>
-              <input type="text" class="form-control" id="cLoser<?php echo $game['game_id']; ?>" name = "cLoser" value = "<?php echo $game['loser']; ?> ">
+              <label for="gLoser<?php echo $game['game_id']; ?>" class="form-label">Loser</label>
+              <input type="text" class="form-control" id="gLoser<?php echo $game['game_id']; ?>" name = "gLoser" value = "<?php echo $game['loser']; ?> ">
             </div>
             <div class="mb-3">
-              <label for="cScore<?php echo $game['game_id']; ?>" class="form-label">Score</label>
-              <input type="text" class="form-control" id="cScore<?php echo $game['game_id']; ?>" name = "cScore" value = "<?php echo $game['score']; ?> ">
+              <label for="gScore<?php echo $game['game_id']; ?>" class="form-label">Score</label>
+              <input type="text" class="form-control" id="gScore<?php echo $game['game_id']; ?>" name = "gScore" value = "<?php echo $game['score']; ?> ">
             </div>
             <div class="mb-3">
-                <label for="cDate<?php echo $game['game_id']; ?>" class="form-label">Date</label>
-                <input type="text" class="form-control" id="cDate<?php echo $game['game_id']; ?>" name = "cDate" value = "<?php echo $game['date']; ?> ">
+                <label for="gDate<?php echo $game['game_id']; ?>" class="form-label">Date</label>
+                <input type="text" class="form-control" id="gDate<?php echo $game['game_id']; ?>" name = "gDate" value = "<?php echo $game['date']; ?> ">
               </div>
                 <input type="hidden" name = "gid" value = "<?php echo $game['game_id']; ?> ">
                 <input type = "hidden" name = "actionType" value = "Edit"> 
