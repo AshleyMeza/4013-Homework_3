@@ -29,7 +29,7 @@ function insertStadium($sName,$sLocation,$sCapacity) {
 function updateStadium($sName,$sLocation,$sCapacity,$sid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `stadium` set `stadium_name`=?, `location`= ?, `capacity`= ?,where stadium_id=?");
+        $stmt = $conn->prepare("update `stadium` set `stadium_name`=?, `location`= ?, `capacity`= ? where stadium_id=?");
         $stmt->bind_param("sssi",$sName,$sLocation,$sCapacity,$sid);
         $success = $stmt->execute();
         $result = $stmt->get_result();
