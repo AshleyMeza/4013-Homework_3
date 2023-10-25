@@ -12,6 +12,20 @@ function selectGames() {
         throw $e;
     }
 }
+function selectGamesForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT game_id,winner FROM `games` order by winner");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 function insertGames($gWinner,$gLoser,$gScore,$gDate) {
     try {
         $conn = get_db_connection();
