@@ -20,7 +20,7 @@
               <label for="gWinner<?php echo $game['game_id']; ?>" class="form-label">Winner</label>
      <?php
         $winnerList = selectGamesForInput();
-        $selectedWinner = $game['game_id'];
+        $selectedWinner = $game['winner'];
         include "view-game-input-list.php";
     ?>
             </div>
