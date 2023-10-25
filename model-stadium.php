@@ -12,6 +12,19 @@ function selectStadium() {
         throw $e;
     }
 }
+function selectStadiumsForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT stadium_id,name FROM `stadium` order by name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 function insertStadium($sName,$sLocation,$sCapacity) {
     try {
         $conn = get_db_connection();
