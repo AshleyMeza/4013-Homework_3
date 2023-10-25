@@ -15,7 +15,7 @@ function selectStadium() {
 function insertStadium($sName,$sLocation,$sCapacity) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `stadium` (`stadium_name`, `location`,'capacity') VALUES (?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO `stadium` (`stadium_name`, `location`,`capacity`) VALUES (?, ?, ?)");
         $stmt->bind_param("sss",$sName,$sLocation,$sCapacity);
         $success = $stmt->execute();
         $result = $stmt->get_result();
