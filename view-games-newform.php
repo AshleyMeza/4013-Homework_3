@@ -17,20 +17,20 @@
       <div class="modal-body">
         <form method = "post" action="">
             <div class="mb-3">
-              <label for="cWinner" class="form-label">Winner</label>
-              <input type="text" class="form-control" id="cWinner" name = "cWinner">
+              <label for="gWinner" class="form-label">Winner</label>
+              <input type="text" class="form-control" id="gWinner" name = "gWinner">
             </div>
             <div class="mb-3">
-              <label for="cLoser" class="form-label">Loser</label>
-              <input type="text" class="form-control" id="cLoser" name = "cLoser">
+              <label for="gLoser" class="form-label">Loser</label>
+              <input type="text" class="form-control" id="gLoser" name = "gLoser">
             </div>
             <div class="mb-3">
-              <label for="cScore" class="form-label">Score</label>
-              <input type="text" class="form-control" id="cScore" name = "cScore">
+              <label for="gScore" class="form-label">Score</label>
+              <input type="text" class="form-control" id="gScore" name = "gScore">
             </div>
             <div class="mb-3">
-                <label for="cDate" class="form-label">Date</label>
-                <input type="text" class="form-control" id="cDate" name = "cDate">
+                <label for="gDate" class="form-label">Date</label>
+                <input type="text" class="form-control" id="gDate" name = "gDate">
               </div>
                 <input type = "hidden" name = "actionType" value = "Add"> 
             <button type="submit" class="btn btn-primary">Save</button>
