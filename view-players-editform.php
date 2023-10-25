@@ -28,7 +28,7 @@
               <label for="pCleats<?php echo $player['player_id']; ?>" class="form-label">Cleats</label>
               <input type="text" class="form-control" id="pCleats<?php echo $player['player_id']; ?>" name = "pCleats" value = "<?php echo $player['cleats']; ?> ">
             </div>
-                <input type="hidden" name = "gid" value = "<?php echo $player['player_id']; ?> ">
+                <input type="hidden" name = "pid" value = "<?php echo $player['player_id']; ?> ">
                 <input type = "hidden" name = "actionType" value = "Edit"> 
             <button type="submit" class="btn btn-primary">Save</button>
           </form>
