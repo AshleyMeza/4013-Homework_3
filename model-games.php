@@ -15,7 +15,7 @@ function selectGames() {
 function insertGames($gWinner,$gLoser,$gScore,$gDate) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `games` (`winner`, `loser`, `score`,'date') VALUES (?, ?, ?,?)");
+        $stmt = $conn->prepare("INSERT INTO `games` (`winner`, `loser`, `score`,`date`) VALUES (?, ?, ?,?)");
         $stmt->bind_param("ssss",$gWinner,$gLoser,$gScore,$gDate);
         $success = $stmt->execute();
         $result = $stmt->get_result();
