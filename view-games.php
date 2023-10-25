@@ -33,6 +33,9 @@ include "view-games-newform.php";
       <td><?php echo $game['score'];?></td>
       <td><?php echo $game['date'];?></td>
       <td>
+        <?php
+          include "view-games-editform.php";
+        ?>
       </td>
       <td>
         <form method = "post" action="">
