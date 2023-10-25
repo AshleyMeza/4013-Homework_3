@@ -18,10 +18,7 @@
         <form method = "post" action="">
             <div class="mb-3">
               <label for="cName" class="form-label">Name</label>
-  <?php
-    $cNameList = selectClubsForInput();
-    include "view-club-input-list.php";
-    ?>            
+             <input type="text" class="form-control" id="cName" name = "cName">
         </div>
             <div class="mb-3">
               <label for="cLocation" class="form-label">Location</label>
